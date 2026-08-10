@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fiske i Solør – Kart over fiskeområder</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <header class="sidebar-header">
+        <h1>🎣 Fiske i Solør</h1>
+        <p class="subtitle">Fiskeområder i Grue, Åsnes og Våler</p>
+      </header>
+
+      <div class="filters">
+        <label class="filter-label" for="search">Søk</label>
+        <input type="search" id="search" placeholder="Søk etter vann eller elv…" autocomplete="off" />
+
+        <div class="chip-group" id="municipality-filters" role="group" aria-label="Filtrer på kommune">
+          <button class="chip is-active" data-municipality="all">Alle</button>
+          <button class="chip" data-municipality="Grue">Grue</button>
+          <button class="chip" data-municipality="Åsnes">Åsnes</button>
+          <button class="chip" data-municipality="Våler">Våler</button>
+        </div>
+
+        <div class="chip-group" id="type-filters" role="group" aria-label="Filtrer på type">
+          <button class="chip is-active" data-type="all">Alle typer</button>
+          <button class="chip" data-type="innsjø">Innsjø</button>
+          <button class="chip" data-type="elv">Elv</button>
+        </div>
+      </div>
+
+      <div class="result-count" id="result-count"></div>
+      <ul id="area-list" class="area-list"></ul>
+
+      <footer class="sidebar-footer">
+        <p>Posisjoner er omtrentlige. Sjekk alltid gyldig fiskekort og lokale regler før du fisker.</p>
+      </footer>
+    </aside>
+
+    <main id="map" aria-label="Kart over fiskeområder i Solør"></main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
