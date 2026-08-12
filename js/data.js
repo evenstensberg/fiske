@@ -7,13 +7,13 @@ window.FISKEOMRADER = [
     id: "vermundsjoen",
     name: "Vermundsjøen",
     type: "innsjø",
-    municipality: "Grue",
-    lat: 60.4265,
-    lng: 12.4600,
+    municipality: "Åsnes",
+    lat: 60.70175,
+    lng: 12.38124,
     species: ["Abbor", "Gjedde", "Sik", "Ørret", "Lake"],
     description:
       "Stor skogssjø på Grue Finnskog, populær for både sommer- og isfiske. Kjent for fin abbor og gjedde.",
-    licence: "Fiskekort via Grue Finnskog / lokalt utsalg",
+    licence: "Fiskekort via Åsnes JFF",
   },
   {
     id: "rogden",
@@ -44,8 +44,8 @@ window.FISKEOMRADER = [
     name: "Hukusjøen",
     type: "innsjø",
     municipality: "Grue",
-    lat: 60.4600,
-    lng: 12.2600,
+    lat: 60.5203,
+    lng: 11.9377,
     species: ["Abbor", "Gjedde", "Sik"],
     description:
       "Rolig skogssjø nær Kirkenær. Fint familievann for abbor og gjedde.",
